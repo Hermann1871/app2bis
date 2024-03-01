@@ -1,0 +1,19 @@
+.frame {
+    /* width: 200px;
+    height: 200px; */
+    /* border: 3px solid red */
+
+    min-width: 200px;
+    /* Set the minimum width */
+    min-height: 200px;
+    /* Set the minimum height */
+    width: auto;
+    /* Allow the width to adjust based on content */
+    height: auto;
+    /* Allow the height to adjust based on content */
+    border: 3px solid red;
+    /* Optional: Adding a border for visualization */
+    overflow: auto;
+    /* Optional: Add overflow behavior for content */
+
+}

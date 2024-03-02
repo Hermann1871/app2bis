@@ -17,7 +17,11 @@ export const Reverser = () => {
         [text])
 
     useEffect(
-        () => {console.log ("Senza secondo parametro") }, )
+        () => { console.log("useEffect senza secondo parametro") },
+    )
+    useEffect(
+        () => { console.log("useEffect con secondo parametro array vuoto") },
+        [])
 
     // console.log(reverseString(text))
 

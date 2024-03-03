@@ -8,7 +8,7 @@ export const Frame = (props: FrameProps ) => {
 
     return (
         <div className="frame">
-            {props.children}
+           <>{props.children}</> 
         </div>
 
 

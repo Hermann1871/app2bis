@@ -1,6 +1,5 @@
 import './Reverser.css'
 
-
 import { useEffect, useState } from "react"
 
 export const Reverser = () => {

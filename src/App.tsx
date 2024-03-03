@@ -10,7 +10,7 @@ import { Reverser } from './components/Reverser/Reverser';
 import { users } from './user/fakeData';
 import { Container } from './components/Container/Container';
 import { Characters } from './components/Characters/Characters';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
 
@@ -23,7 +23,16 @@ function App() {
   const [numbers, setNumbers] = useState([3, 5, 6, 7])
 
   return (
+
+
     <div className="App">
+      <h1>App - Homepage</h1>
+
+      <p>Prima di Outlet</p>
+      <Frame>
+        <Outlet />
+      </Frame>
+      <p>Dopo di Outlet</p>
 
       <Link to="/">Link alla Home</Link>
       <br />

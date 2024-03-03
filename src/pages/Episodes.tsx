@@ -56,6 +56,8 @@ export const Episodes = () => {
             <Link to="/">Link alla Home</Link>
             <br />
             <Link to="/episodes">Link agli episodi</Link>
+            <br />
+            <Link to="/episodesChildren">Link agli episodi - Children</Link>
 
             <p>Pagina: {currentPage} / {lastPage}</p>
             {currentPage !== 1 && <button onClick={() => setCurrentPage(1)}>First page</button>}

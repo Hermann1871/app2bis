@@ -36,8 +36,8 @@ export const Characters = () => {
     useEffect(
         () => {
             (async () => {
-                // const result = await axios.get(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
-                const result = await axios.get(`https://rickandmortyapi.com/api/episode?page=${currentPage}`)
+                const result = await axios.get(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
+                // const result = await axios.get(`https://rickandmortyapi.com/api/episode?page=${currentPage}`)
                 setCharacters(result.data.results);
                 setLastPage(result.data.info.pages)
                 console.log("Pages Total", result.data.info.pages)
@@ -61,6 +61,7 @@ export const Characters = () => {
     //     }, [])
 
     return <>
+        <h2>Characters.tsx</h2>
         <p>Pagina: {currentPage} / {lastPage}</p>
         {currentPage !== 1 && <button onClick={() => setCurrentPage(1)}>First page</button>}
         {currentPage > 1 && <button onClick={() => setCurrentPage(currentPage - 1)}>Pagina precedente</button>}
